@@ -10,7 +10,12 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -19,6 +24,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "http://dstiq.github.io/react-page",
   "browserslist": {
     "production": [
       ">0.2%",
